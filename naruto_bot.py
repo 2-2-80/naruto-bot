@@ -2,7 +2,7 @@
 import discord
 
 # 自分のBotのアクセストークンに置き換えてください
-TOKEN = ''
+TOKEN = (process.env.TOKEN)
 
 # 接続に必要なオブジェクトを生成
 client = discord.Client()
@@ -106,6 +106,94 @@ async def on_message(message):
 ベルナルド : ルールは理解している。ネイティブボーイ。
 
 リフ : アイス！''')
+
+# 「naruto」と発言したら返る処理
+    if message.content == 'naruto':
+        await message.channel.send('''[at the ball]
+
+Tony : Don't tell me you think I'm someone else?
+
+Maria : I know you're not.
+
+Tony : Or do you think we've met before?
+
+Maria : I know we haven't.
+
+Tony : I felt... I knew something was going to happen that had never happened before. But this is more than that.
+
+Maria : My hands are cold.
+
+Maria : So are your hands.
+
+Maria : Very warm.
+
+Tony : So beautiful.
+
+Maria : Beautiful.
+
+Tony : It's unbelievable. Are you kidding me?
+
+Maria : I haven't learned how to joke like that yet. I don't think I could ever do it now.
+
+Bernardo : Get your hands off me, American!
+
+Maria : Naruto!
+
+Bernardo : Stay away from my sister.
+
+Tony : Your sister?
+
+Bernardo : Didn't you see that he was one of them?
+
+Maria : He was all I could see.
+
+Bernardo : There is one thing they are looking for in a Puerto Rican girl.
+
+Tony : That's a lie.
+
+Riff : See you later, Tony.
+
+Chino : Run.
+
+Tony : Don't listen to her.
+
+Bernardo : She'll listen to me before she listens to you.
+
+: If you two want to work this out...
+
+: Please, you guys! Everything was going so well. Come on, come on. Let's have a good time together, shall we?
+
+Maria : Naldo...
+
+Bernardo : Please take her out of here. We're going home.
+
+Maria : Naldo, this is my first dance.
+
+Bernardo : Please. We're a family. Now, please go.
+
+Chino : Come on, Maria.
+
+Tony : Oh, Maria...
+
+Bernardo : I don't want to see you.
+
+Riff : I'd like to talk to you. (It's just the two of us)
+
+Riff : I want you at the tactical meeting. Jets and Sharks.
+
+Bernardo : The pleasure is mine.
+
+Riff : Let's go outside.
+
+Bernardo : With someone like you, I can't leave the women here alone. I can't leave the women alone with someone like you.
+
+Bernardo : I'll see you at midnight.
+
+Riff : The candy store on the dock? But first, don't jazz me up. 
+
+Bernardo : I understand the rules. Native Boy.
+
+Riff : Ice!''')
                                    
 # Botの起動とDiscordサーバーへの接続
 client.run(TOKEN)
